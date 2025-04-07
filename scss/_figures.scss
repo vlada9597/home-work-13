@@ -1,0 +1,52 @@
+
+.square {
+    fill: #4326e2;
+    stroke: #1f0757;
+    stroke-width: 5px;
+  }
+
+  .rectangle {
+    fill: #0add0a;
+    stroke: #093d09;
+    stroke-width: 7px;
+    transition-duration: 8s;
+
+    &:hover {
+        animation: rotateRect 7s 1 normal;
+   }
+
+   @keyframes rotateRect {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  }
+
+  .circle {
+    fill: #eeff00;
+    stroke: #044419;
+    stroke-width: 5px;
+    animation: colorChange 2s infinite alternate;
+}
+    
+  @keyframes colorChange {
+    0% {
+      fill: #eeff00;
+      stroke: #044419;
+    }
+    100% {
+      fill: #07b4f8;
+      stroke: #960496;
+    }
+  }
+
+
+  .ellipse {
+    fill: #ff2020;
+    stroke: #490909;
+    stroke-width: 5px;
+  }
+
